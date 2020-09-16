@@ -16,9 +16,18 @@ body {
 ul li{
     list-style-type: none;
 }
+/*HEADING*/
 h1{
     color: #fff;
     font-size: 3rem;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0; 
+    
 }
 /* =========================== */
     /* REUSABLE COMPONENTS */
@@ -59,7 +68,7 @@ header{
     float: left;
 }
 section{
-    padding: 8rem;
+    padding: 8rem 0;
 }
 /* =========================== */
     /* NAV SECTION */
@@ -114,3 +123,23 @@ section{
 /* =========================== */
     /* SERVICES SECTION */
 /* =========================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
