@@ -394,6 +394,7 @@ MORE LOAD BUTTTON
     background: linear-gradient(rgba(215, 70, 128, 0.9), rgba(215, 70, 128, 0.9)), url(img/testimonial-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    color: #fff;
 }
 
 .testimonial-section h3 {
@@ -440,7 +441,25 @@ MORE LOAD BUTTTON
     margin-top: 0;
     margin-bottom: 2rem;
 }
-
 .client-review span {
     color: #ffdd99;
+}
+/* =========================== */
+/* CONTACT  SECTION */
+/* =========================== */
+.contact-section{
+    background: linear-gradient(rgba(60, 84, 153, 0.9), rgba(60, 84, 153, 0.9)), url(img/contact-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+.contact-section h2::after {
+    background: #273a71;
+}
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea{
+    background: #273a71;
+    width: 100%;
 }
