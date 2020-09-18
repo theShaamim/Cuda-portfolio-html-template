@@ -145,6 +145,7 @@ section {
 /* =========================== */
 /* NAV SECTION */
 /* =========================== */
+
 .main-nav {
     float: right;
     margin-top: 4rem;
@@ -184,7 +185,22 @@ section {
     background: rgba(100, 58, 121, 1);
     border-radius: 0.3rem;
 }
+/*STICKY MWNU*/
 
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(135, 80, 156, 0.9);
+    padding: 1rem 0;
+}
+.sticky .logo{
+   margin-top: 0;
+}
+.sticky .main-nav{
+    margin-top: .3rem;
+}
 .hero-text-box {
     position: absolute;
     top: 50%;
@@ -291,7 +307,7 @@ section {
     display: inline-block;
     padding: 1rem;
     border-radius: 50%;
-    transition: 1 s;
+    transition: 1s;
 }
 
 .social-link ul li a:hover i::before {
@@ -308,6 +324,7 @@ section {
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .skill-section h2,
@@ -333,6 +350,7 @@ section {
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .portfolio-section h2::after {
@@ -394,6 +412,7 @@ MORE LOAD BUTTTON
     background: linear-gradient(rgba(215, 70, 128, 0.9), rgba(215, 70, 128, 0.9)), url(img/testimonial-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #fff;
 }
 
@@ -441,25 +460,82 @@ MORE LOAD BUTTTON
     margin-top: 0;
     margin-bottom: 2rem;
 }
+
 .client-review span {
     color: #ffdd99;
 }
+
 /* =========================== */
 /* CONTACT  SECTION */
 /* =========================== */
-.contact-section{
+.contact-section {
     background: linear-gradient(rgba(60, 84, 153, 0.9), rgba(60, 84, 153, 0.9)), url(img/contact-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
     text-align: center;
     color: #fff;
 }
+
 .contact-section h2::after {
     background: #273a71;
 }
+
 .contact-section input[type="text"],
 .contact-section input[type="email"],
-.contact-section textarea{
+.contact-section textarea {
     background: #273a71;
     width: 100%;
+    border: 1rem solid #273a71;
+    outline: none;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    color: #fff;
+    
+}
+.contact-section form{
+    margin-top: 5rem;
+    width: 70%;
+    margin-left: 15%;
+    
+}
+.contact-section form ::placeholder{
+    color: #fff;
+    opacity: 85%;
+    
+}
+.btn-submit{
+    border: 0;
+    background: #30bae7;
+    border-bottom: .3rem solid #299ec5;
+    border-radius: 0.3rem;
+}
+.btn-submit:hover{
+    cursor: pointer;
+}
+/*FOOTER SECTION*/
+.footer-section{
+    background: #344b8e;
+    text-align: center;
+    padding: 3rem 0;
+}
+.footer-section li{
+    display: inline-block;
+    margin: 0 2rem;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    color: #fff;
+}
+.footer-section ul li a{
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+.footer-section ul li a:hover{
+    color: #30bae7;
 }
